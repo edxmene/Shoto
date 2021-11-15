@@ -1,6 +1,14 @@
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
 import { Container } from "react-bootstrap";
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+  Switch,
+} from "react-router-dom";
+import Users from "./components/Users";
+import Places from "./components/Places";
 
 function App() {
   return (
@@ -8,7 +16,17 @@ function App() {
       <Header />
       <main>
         <Container>
-          <h1>This is App</h1>
+          <Router>
+            <Switch>
+              <Route path="/" exact>
+                <Users />
+              </Route>
+              <Route path="/places" exact>
+                <Places />
+              </Route>
+              <Redirect to="/" />
+            </Switch>
+          </Router>
         </Container>
       </main>
       <Footer />
