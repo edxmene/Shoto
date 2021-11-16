@@ -9,7 +9,6 @@ const Footer = () => {
           <Col className="text-center py-3">Copyrigth &copy; Shoto</Col>
         </Row>
       </Container>
-      <h4>Footer</h4>
     </footer>
   );
 };
