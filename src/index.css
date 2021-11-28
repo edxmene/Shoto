@@ -27,7 +27,7 @@ main {
   text-align: center;
 }
 
-.card:hover {
+.card.user:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
@@ -56,6 +56,18 @@ ul.userlists {
   flex-wrap: wrap;
 }
 
-.card {
+.card.user {
   text-align: center;
+}
+
+.card.places {
+  text-align: center;
+  min-width: 550px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.placesList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }

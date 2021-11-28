@@ -8,7 +8,7 @@ import {
   Switch,
 } from "react-router-dom";
 import Users from "./components/Users";
-import Places from "./components/Places";
+import UserPlaces from "./components/Places/UserPlaces";
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
               <Users />
             </Route>
             <Route path="/places">
-              <Places />
+              <UserPlaces />
             </Route>
             {/* <Redirect to="/" /> */}
           </Switch>

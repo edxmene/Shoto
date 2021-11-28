@@ -2,7 +2,10 @@ import React from "react";
 
 const UserItem = ({ name, image, countPlaces, job }) => {
   return (
-    <div className="card border-secondary mb-3" style={{ minWidth: "200px" }}>
+    <div
+      className="card user border-secondary mb-3"
+      style={{ minWidth: "200px" }}
+    >
       <div className="card-header">{name}</div>
       <div className="card-body">
         <div className="img-container">
