@@ -13,23 +13,21 @@ import Places from "./components/Places";
 function App() {
   return (
     <div className="App">
-      <Header />
-      <main>
+      <Router>
+        <Header />
         <Container>
-          <Router>
-            <Switch>
-              <Route path="/" exact>
-                <Users />
-              </Route>
-              <Route path="/places" exact>
-                <Places />
-              </Route>
-              <Redirect to="/" />
-            </Switch>
-          </Router>
+          <Switch>
+            <Route path="/" exact>
+              <Users />
+            </Route>
+            <Route path="/places">
+              <Places />
+            </Route>
+            {/* <Redirect to="/" /> */}
+          </Switch>
         </Container>
-      </main>
-      <Footer />
+        <Footer />
+      </Router>
     </div>
   );
 }
