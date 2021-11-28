@@ -58,6 +58,8 @@ ul.userlists {
 
 .card.user {
   text-align: center;
+  color: black;
+  text-decoration: none;
 }
 
 .card.places {

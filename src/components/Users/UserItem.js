@@ -1,8 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const UserItem = ({ name, image, countPlaces, job }) => {
+const UserItem = ({ id, name, image, countPlaces, job }) => {
   return (
-    <div
+    <Link
+      to={`/${id}/places`}
       className="card user border-secondary mb-3"
       style={{ minWidth: "200px" }}
     >
@@ -14,7 +16,7 @@ const UserItem = ({ name, image, countPlaces, job }) => {
         <h6 className="card-title">{job}</h6>
         <p className="card-text">Number of visits: {countPlaces}</p>
       </div>
-    </div>
+    </Link>
   );
 };
 
